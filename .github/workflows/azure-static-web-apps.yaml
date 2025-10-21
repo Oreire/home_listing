@@ -1,4 +1,4 @@
-name: 🚀 Deploy Static Web App to Azure
+name: Deploy Static Web App to Azure
 
 on:
   push:
@@ -18,13 +18,13 @@ jobs:
       - name: 🛠️ Checkout repository
         uses: actions/checkout@v4
 
-      # 👇 Optional: Add a build step if you have one (e.g., npm, react, vite)
+      # Optional: Add a build step if you have one (e.g., npm, react, vite)
       # - name: Build app
       #   run: |
       #     npm install
       #     npm run build
 
-      - name: 🚀 Deploy to Azure Static Web Apps
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
